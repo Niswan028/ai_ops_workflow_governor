@@ -45,7 +45,9 @@ Visit site → Capture network → Run detectors → Generate report → Trigger
 
 ## 📸 Sample Report
 
-(Add a screenshot here — this is very important)
+<img width="1691" height="853" alt="image" src="https://github.com/user-attachments/assets/e2d4c92d-1b76-457e-8eb6-59314899fdca" />
+<img width="1695" height="847" alt="image" src="https://github.com/user-attachments/assets/6e300ecf-9fde-4e00-b2e9-d964f2999ffa" />
+
 
 ---
 
