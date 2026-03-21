@@ -1,60 +1,167 @@
-# AI-Ops Workflow Governor
-### for fitaichat.netlify.app — v1 Prototype
+# AI Ops Workflow Governor
 
-Reads website performance logs, detects patterns (slow loads, request bursts), and outputs actionable optimization rules as JSON.
+Automated website performance auditing using real browser data — not synthetic scores.
+
+This tool uses Playwright + Python to visit live websites, capture real network activity, detect performance issues, and generate actionable reports — fully automated via GitHub Actions.
 
 ---
 
-## Structure
+## ⚙️ What It Does
+
+A headless Chromium browser visits your site and collects:
+
+* Page load time
+* Time to First Byte (TTFB)
+* Total network requests
+* Real JS/CSS assets from the network tab
+
+Then a rule engine analyzes the data and flags issues.
+
+---
+
+## 🚨 Detection Rules
+
+| Rule           | Threshold     |
+| -------------- | ------------- |
+| Slow Load Time | > 1500ms      |
+| Heavy Requests | > 10 requests |
+| High TTFB      | > 600ms       |
+
+---
+
+## 📊 Output
+
+* ✅ JSON alerts (machine-readable)
+* 📄 HTML report (visual + history tracking)
+* 🔁 Runs automatically via GitHub Actions
+
+---
+
+## 🧠 How It Works
+
+Visit site → Capture network → Run detectors → Generate report → Trigger alerts
+
+---
+
+## 📸 Sample Report
+
+(Add a screenshot here — this is very important)
+
+---
+
+## 🔍 Example Findings
+
+Tested from India (cold loads):
+
+* Reddit → ~731ms ✅
+* Medium → ~783ms ✅
+* dev.to → ~2271ms ⚠️
+* civicpulse.in → ~6423ms 🔴
+
+### Detected Issue (Example)
+
+Next.js assets loading without prefetching:
 
 ```
-ai_ops_workflow_governor/
-├── core/
-│   ├── log_parser.py        # CSV log reader
-│   ├── pattern_finder.py    # Slow load + burst detection
-│   └── rule_engine.py       # Rule builders (prefetch / defer)
-├── engine/
-│   └── governor.py          # WorkflowGovernor orchestrator
-├── data/
-│   ├── performance_logs.csv # Input logs
-│   └── performance_rules.json  # Output rules (generated)
-├── scripts/
-│   └── run.py               # Entry point
-├── tests/
-│   └── test_core.py
-├── requirements.txt
-└── README.md
+/_next/static/chunks/*.js
+/_next/static/chunks/*.css
 ```
 
-## Quickstart
+### Suggested Fix
+
+* Prefetch critical assets
+* Enable CDN caching
+
+Estimated improvement: ~650ms per page
+
+---
+
+## 💡 Why This Tool?
+
+Most developers run Lighthouse once and move on.
+
+This tool:
+
+* Runs continuously (daily)
+* Tracks performance trends
+* Detects real issues from live traffic
+* Suggests exactly what to fix
+
+No manual checks required.
+
+---
+
+## 🧰 Tech Stack
+
+* Python
+* Playwright
+* JSON / CSV
+* GitHub Actions
+
+Zero paid tools.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/ai_ops_workflow_governor.git
+cd ai_ops_workflow_governor
+```
+
+### 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
-cd ai_ops_workflow_governor
-python scripts/run.py
+playwright install
 ```
 
-Output is written to `data/performance_rules.json`.
-
-## Run Tests
+### 3. Run the audit
 
 ```bash
-pytest tests/
+python main.py --url https://example.com
 ```
 
-## Log Format
+---
 
-`data/performance_logs.csv` expects these columns:
+## 🔁 Automation (GitHub Actions)
 
-| Column | Description |
-|---|---|
-| `timestamp` | ISO 8601 |
-| `page_url` | Relative URL |
-| `ttfb_ms` | Time to first byte (ms) |
-| `load_time_ms` | Full page load time (ms) |
-| `requests_count` | Number of HTTP requests |
-| `core_web_vitals_status` | `good` / `needs-improvement` / `poor` |
+The workflow runs daily and:
 
-## Extending to Other Sites
+* Audits configured websites
+* Stores results
+* Generates reports automatically
 
-Replace `data/performance_logs.csv` with logs from any site. The governor is site-agnostic — only the `pattern_id` labels in `governor.py` are site-specific.
+Check `.github/workflows/` for setup.
+
+---
+
+## 📌 Roadmap
+
+* [ ] Mobile performance simulation
+* [ ] Lighthouse score integration
+* [ ] Smarter (adaptive) thresholds
+* [ ] Slack / Email alerts
+* [ ] Dashboard UI
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+Feel free to open issues or submit PRs.
+
+---
+
+## ⭐ Support
+
+If you find this useful, consider giving it a star.
+
+---
+
+## 📬 Contact
+
+Built by Niswan
+(Open an issue or connect via GitHub)
