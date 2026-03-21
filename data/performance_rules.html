@@ -22,27 +22,35 @@
 </head>
 <body>
 <h1>AI-Ops Workflow Governor</h1>
-<div class="subtitle">fitaichat.netlify.app — Performance Report</div>
+<div class="subtitle">hashnode.com — Performance Report</div>
 
 <h2>Latest Metrics</h2>
 <table>
   <thead><tr><th>Timestamp</th><th>Page</th><th>TTFB</th><th>Load Time</th><th>Requests</th><th>CWV Status</th></tr></thead>
   <tbody>
         <tr>
-            <td>2026-03-21T06:22:17.280429+00:00</td>
+            <td>2026-03-21T06:53:31.737222+00:00</td>
             <td>/</td>
-            <td>760 ms</td>
-            <td>4265 ms</td>
-            <td>2</td>
+            <td>496 ms</td>
+            <td>5859 ms</td>
+            <td>22</td>
             <td><span style="color:#ef4444;font-weight:bold">poor</span></td>
         </tr>
         <tr>
-            <td>2026-03-21T06:22:18.510064+00:00</td>
-            <td>/chat</td>
-            <td>218 ms</td>
-            <td>659 ms</td>
-            <td>2</td>
-            <td><span style="color:#22c55e;font-weight:bold">good</span></td>
+            <td>2026-03-21T06:53:36.768498+00:00</td>
+            <td>/explore</td>
+            <td>0 ms</td>
+            <td>3750 ms</td>
+            <td>21</td>
+            <td><span style="color:#ef4444;font-weight:bold">poor</span></td>
+        </tr>
+        <tr>
+            <td>2026-03-21T06:53:42.354283+00:00</td>
+            <td>/featured</td>
+            <td>0 ms</td>
+            <td>4452 ms</td>
+            <td>21</td>
+            <td><span style="color:#ef4444;font-weight:bold">poor</span></td>
         </tr></tbody>
 </table>
 
@@ -51,37 +59,145 @@
         <div class="rule">
             <div class="rule-id">slow_load_time</div>
             <div class="rule-action">Action: <strong>prefetch_critical_assets</strong></div>
-            <div>Detail: <code>https://fitaichat.netlify.app/static/css/main.f8a5623e.css, https://fitaichat.netlify.app/static/js/main.a18236ee.js</code></div>
+            <div>Detail: <code>https://hashnode.com/_next/static/chunks/72cd4bd1e0564c77.css, https://hashnode.com/_next/static/chunks/39c65b9ff246101f.css, https://hashnode.com/_next/static/chunks/5aa6e52e0dd7aea2.css, https://hashnode.com/_next/static/chunks/faf4a0202735b81c.js, https://hashnode.com/_next/static/chunks/ade94519337d7214.js</code></div>
             <div class="rule-gain">Estimated saving: 400 ms</div>
         </div>
         <div class="rule">
-            <div class="rule-id">high_ttfb</div>
-            <div class="rule-action">Action: <strong>enable_cdn_caching</strong></div>
-            <div>Detail: <code>Enable CDN edge caching or move to a faster hosting region</code></div>
-            <div class="rule-gain">Estimated saving: 250 ms</div>
+            <div class="rule-id">chat_widget_burst</div>
+            <div class="rule-action">Action: <strong>defer_chat_widget</strong></div>
+            <div>Detail: <code>defer_delay=2000ms</code></div>
+            <div class="rule-gain">Estimated saving: 300 ms</div>
         </div>
 
-<h2>Alerts (last 1)</h2><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page / is POOR — load=4265ms, ttfb=760ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-03-21T06:22:19</span></div>
+<h2>Alerts (last 10)</h2><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page / is POOR — load=4265ms, ttfb=760ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-03-21T06:22:19</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page / is POOR — load=3500ms, ttfb=700ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-03-21T06:23:30</span></div><div class="alert" style="border-left-color:#f59e0b"><strong>[WARNING]</strong> Page /chat is POOR — load=2800ms, ttfb=500ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-03-21T06:23:30</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page / is POOR — load=3500ms, ttfb=700ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-03-21T06:23:42</span></div><div class="alert" style="border-left-color:#f59e0b"><strong>[WARNING]</strong> Page /chat is POOR — load=2800ms, ttfb=500ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-03-21T06:23:42</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page / is POOR — load=6423ms, ttfb=346ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-03-21T06:33:44</span></div><div class="alert" style="border-left-color:#f59e0b"><strong>[WARNING]</strong> Page /top/week is POOR — load=2979ms, ttfb=533ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-03-21T06:38:18</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page / is POOR — load=5859ms, ttfb=496ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-03-21T06:53:47</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page /explore is POOR — load=3750ms, ttfb=0ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-03-21T06:53:47</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page /featured is POOR — load=4452ms, ttfb=0ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-03-21T06:53:47</span></div>
 
 
-        <h2>History (last 2 runs)</h2>
+        <h2>History (last 20 runs)</h2>
         <table>
           <thead><tr><th>Timestamp</th><th>Page</th><th>Load Time</th><th>Status</th></tr></thead>
           <tbody>
             <tr>
-                <td>2026-03-21T06:22:17</td>
+                <td>2026-03-21T06:33:40</td>
+                <td>/about</td>
+                <td>1811 ms</td>
+                <td><span style="color:#f59e0b;font-weight:bold">needs-improvement</span></td>
+            </tr>
+            <tr>
+                <td>2026-03-21T06:33:43</td>
+                <td>/contact</td>
+                <td>1853 ms</td>
+                <td><span style="color:#f59e0b;font-weight:bold">needs-improvement</span></td>
+            </tr>
+            <tr>
+                <td>2026-03-21T06:36:11</td>
                 <td>/</td>
-                <td>4265 ms</td>
+                <td>731 ms</td>
+                <td><span style="color:#22c55e;font-weight:bold">good</span></td>
+            </tr>
+            <tr>
+                <td>2026-03-21T06:36:13</td>
+                <td>/r/python</td>
+                <td>768 ms</td>
+                <td><span style="color:#22c55e;font-weight:bold">good</span></td>
+            </tr>
+            <tr>
+                <td>2026-03-21T06:36:14</td>
+                <td>/r/webdev</td>
+                <td>672 ms</td>
+                <td><span style="color:#22c55e;font-weight:bold">good</span></td>
+            </tr>
+            <tr>
+                <td>2026-03-21T06:38:08</td>
+                <td>/</td>
+                <td>2271 ms</td>
+                <td><span style="color:#f59e0b;font-weight:bold">needs-improvement</span></td>
+            </tr>
+            <tr>
+                <td>2026-03-21T06:38:12</td>
+                <td>/top/week</td>
+                <td>2979 ms</td>
                 <td><span style="color:#ef4444;font-weight:bold">poor</span></td>
             </tr>
             <tr>
-                <td>2026-03-21T06:22:18</td>
-                <td>/chat</td>
-                <td>659 ms</td>
+                <td>2026-03-21T06:38:16</td>
+                <td>/listings</td>
+                <td>1486 ms</td>
+                <td><span style="color:#f59e0b;font-weight:bold">needs-improvement</span></td>
+            </tr>
+            <tr>
+                <td>2026-03-21T06:41:58</td>
+                <td>/</td>
+                <td>-1774075317897 ms</td>
                 <td><span style="color:#22c55e;font-weight:bold">good</span></td>
+            </tr>
+            <tr>
+                <td>2026-03-21T06:41:59</td>
+                <td>/topic/technology</td>
+                <td>-1774075318594 ms</td>
+                <td><span style="color:#22c55e;font-weight:bold">good</span></td>
+            </tr>
+            <tr>
+                <td>2026-03-21T06:41:59</td>
+                <td>/topic/programming</td>
+                <td>-1774075319141 ms</td>
+                <td><span style="color:#22c55e;font-weight:bold">good</span></td>
+            </tr>
+            <tr>
+                <td>2026-03-21T06:42:17</td>
+                <td>/</td>
+                <td>783 ms</td>
+                <td><span style="color:#22c55e;font-weight:bold">good</span></td>
+            </tr>
+            <tr>
+                <td>2026-03-21T06:42:21</td>
+                <td>/topic/technology</td>
+                <td>772 ms</td>
+                <td><span style="color:#22c55e;font-weight:bold">good</span></td>
+            </tr>
+            <tr>
+                <td>2026-03-21T06:42:24</td>
+                <td>/topic/programming</td>
+                <td>653 ms</td>
+                <td><span style="color:#22c55e;font-weight:bold">good</span></td>
+            </tr>
+            <tr>
+                <td>2026-03-21T06:42:50</td>
+                <td>/</td>
+                <td>-1774075366491 ms</td>
+                <td><span style="color:#22c55e;font-weight:bold">good</span></td>
+            </tr>
+            <tr>
+                <td>2026-03-21T06:42:54</td>
+                <td>/explore</td>
+                <td>-1774075371512 ms</td>
+                <td><span style="color:#22c55e;font-weight:bold">good</span></td>
+            </tr>
+            <tr>
+                <td>2026-03-21T06:42:57</td>
+                <td>/featured</td>
+                <td>-1774075375346 ms</td>
+                <td><span style="color:#22c55e;font-weight:bold">good</span></td>
+            </tr>
+            <tr>
+                <td>2026-03-21T06:53:31</td>
+                <td>/</td>
+                <td>5859 ms</td>
+                <td><span style="color:#ef4444;font-weight:bold">poor</span></td>
+            </tr>
+            <tr>
+                <td>2026-03-21T06:53:36</td>
+                <td>/explore</td>
+                <td>3750 ms</td>
+                <td><span style="color:#ef4444;font-weight:bold">poor</span></td>
+            </tr>
+            <tr>
+                <td>2026-03-21T06:53:42</td>
+                <td>/featured</td>
+                <td>4452 ms</td>
+                <td><span style="color:#ef4444;font-weight:bold">poor</span></td>
             </tr></tbody>
         </table>
 
-<div class="generated">Generated: 2026-03-21 11:52:19</div>
+<div class="generated">Generated: 2026-03-21 12:23:48</div>
 </body>
 </html>

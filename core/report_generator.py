@@ -94,7 +94,7 @@ def generate_report(logs_filename: str, rules_filename: str, output_filename: st
 </head>
 <body>
 <h1>AI-Ops Workflow Governor</h1>
-<div class="subtitle">fitaichat.netlify.app — Performance Report</div>
+<div class="subtitle">hashnode.com — Performance Report</div>
 
 <h2>Latest Metrics</h2>
 <table>

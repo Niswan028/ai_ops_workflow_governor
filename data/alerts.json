@@ -38,5 +38,45 @@
     "ttfb_ms": "500",
     "severity": "warning",
     "message": "Page /chat is POOR \u2014 load=2800ms, ttfb=500ms"
+  },
+  {
+    "timestamp": "2026-03-21T06:33:44.941848+00:00",
+    "page": "/",
+    "load_time_ms": "6423",
+    "ttfb_ms": "346",
+    "severity": "critical",
+    "message": "Page / is POOR \u2014 load=6423ms, ttfb=346ms"
+  },
+  {
+    "timestamp": "2026-03-21T06:38:18.450551+00:00",
+    "page": "/top/week",
+    "load_time_ms": "2979",
+    "ttfb_ms": "533",
+    "severity": "warning",
+    "message": "Page /top/week is POOR \u2014 load=2979ms, ttfb=533ms"
+  },
+  {
+    "timestamp": "2026-03-21T06:53:47.906499+00:00",
+    "page": "/",
+    "load_time_ms": "5859",
+    "ttfb_ms": "496",
+    "severity": "critical",
+    "message": "Page / is POOR \u2014 load=5859ms, ttfb=496ms"
+  },
+  {
+    "timestamp": "2026-03-21T06:53:47.906499+00:00",
+    "page": "/explore",
+    "load_time_ms": "3750",
+    "ttfb_ms": "0",
+    "severity": "critical",
+    "message": "Page /explore is POOR \u2014 load=3750ms, ttfb=0ms"
+  },
+  {
+    "timestamp": "2026-03-21T06:53:47.906499+00:00",
+    "page": "/featured",
+    "load_time_ms": "4452",
+    "ttfb_ms": "0",
+    "severity": "critical",
+    "message": "Page /featured is POOR \u2014 load=4452ms, ttfb=0ms"
   }
 ]
