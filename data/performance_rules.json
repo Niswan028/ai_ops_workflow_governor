@@ -1,0 +1,13 @@
+{
+  "governor_rules": [
+    {
+      "pattern_id": "fitbot_slow_load_time",
+      "action_type": "prefetch_critical_assets",
+      "critical_assets": [
+        "/static/app.js",
+        "/static/styles.css"
+      ],
+      "estimated_load_time_reduction_ms": 400
+    }
+  ]
+}
