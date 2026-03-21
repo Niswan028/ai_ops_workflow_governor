@@ -1,3 +1,3 @@
 timestamp,page_url,ttfb_ms,load_time_ms,requests_count,core_web_vitals_status
-2026-03-21T05:15:30.215100+00:00,/,686,2691,2,poor
-2026-03-21T05:15:32.580079+00:00,/chat,442,1799,2,needs-improvement
+2026-03-21T06:13:16.884250+00:00,/,1124,5365,2,poor
+2026-03-21T06:13:18.663292+00:00,/chat,458,1183,2,needs-improvement

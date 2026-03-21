@@ -8,6 +8,12 @@
         "/static/styles.css"
       ],
       "estimated_load_time_reduction_ms": 400
+    },
+    {
+      "pattern_id": "high_ttfb",
+      "action_type": "enable_cdn_caching",
+      "recommendation": "Enable CDN edge caching or move to a faster hosting region",
+      "estimated_load_time_reduction_ms": 250
     }
   ]
 }
