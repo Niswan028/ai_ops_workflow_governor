@@ -2,67 +2,86 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>AI-Ops Workflow Governor � Report</title>
+<title>AI-Ops Workflow Governor — Report</title>
 <style>
-  body { font-family: system-ui, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; background: #f8fafc; color: #1e293b; }
+  body { font-family: system-ui, sans-serif; max-width: 960px; margin: 40px auto; padding: 0 20px; background: #f8fafc; color: #1e293b; }
   h1 { font-size: 1.6rem; margin-bottom: 4px; }
   .subtitle { color: #64748b; margin-bottom: 32px; font-size: 0.9rem; }
-  h2 { font-size: 1.1rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 6px; margin-top: 32px; }
-  table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  h2 { font-size: 1.1rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 6px; margin-top: 36px; }
+  table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 8px; }
   th { background: #1e293b; color: white; padding: 10px 14px; text-align: left; font-size: 0.85rem; }
-  td { padding: 10px 14px; border-bottom: 1px solid #f1f5f9; font-size: 0.9rem; }
+  td { padding: 10px 14px; border-bottom: 1px solid #f1f5f9; font-size: 0.88rem; }
   tr:last-child td { border-bottom: none; }
   .rule { background: white; border-left: 4px solid #6366f1; padding: 14px 18px; margin-bottom: 12px; border-radius: 0 8px 8px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
   .rule-id { font-weight: bold; color: #6366f1; margin-bottom: 4px; }
-  .rule-action { margin-bottom: 4px; }
   .rule-gain { color: #22c55e; font-weight: bold; margin-top: 6px; }
-  code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-size: 0.85rem; }
+  .alert { background: white; border-left: 4px solid #ef4444; padding: 10px 16px; margin-bottom: 8px; border-radius: 0 8px 8px 0; font-size: 0.9rem; }
+  code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-size: 0.83rem; word-break: break-all; }
   .generated { color: #94a3b8; font-size: 0.8rem; margin-top: 40px; }
 </style>
 </head>
 <body>
 <h1>AI-Ops Workflow Governor</h1>
-<div class="subtitle">fitaichat.netlify.app � Performance Report</div>
+<div class="subtitle">fitaichat.netlify.app — Performance Report</div>
 
-<h2>Collected Metrics</h2>
+<h2>Latest Metrics</h2>
 <table>
-  <thead>
-    <tr><th>Timestamp</th><th>Page</th><th>TTFB</th><th>Load Time</th><th>Requests</th><th>CWV Status</th></tr>
-  </thead>
+  <thead><tr><th>Timestamp</th><th>Page</th><th>TTFB</th><th>Load Time</th><th>Requests</th><th>CWV Status</th></tr></thead>
   <tbody>
         <tr>
-            <td>2026-03-21T06:13:16.884250+00:00</td>
+            <td>2026-03-21T06:22:17.280429+00:00</td>
             <td>/</td>
-            <td>1124 ms</td>
-            <td>5365 ms</td>
+            <td>760 ms</td>
+            <td>4265 ms</td>
             <td>2</td>
             <td><span style="color:#ef4444;font-weight:bold">poor</span></td>
         </tr>
         <tr>
-            <td>2026-03-21T06:13:18.663292+00:00</td>
+            <td>2026-03-21T06:22:18.510064+00:00</td>
             <td>/chat</td>
-            <td>458 ms</td>
-            <td>1183 ms</td>
+            <td>218 ms</td>
+            <td>659 ms</td>
             <td>2</td>
-            <td><span style="color:#f59e0b;font-weight:bold">needs-improvement</span></td>
+            <td><span style="color:#22c55e;font-weight:bold">good</span></td>
         </tr></tbody>
 </table>
 
 <h2>Governor Rules (2 recommendations)</h2>
 
         <div class="rule">
-            <div class="rule-id">fitbot_slow_load_time</div>
+            <div class="rule-id">slow_load_time</div>
             <div class="rule-action">Action: <strong>prefetch_critical_assets</strong></div>
-            <div>Assets: <code>/static/app.js, /static/styles.css</code></div>
+            <div>Detail: <code>https://fitaichat.netlify.app/static/css/main.f8a5623e.css, https://fitaichat.netlify.app/static/js/main.a18236ee.js</code></div>
             <div class="rule-gain">Estimated saving: 400 ms</div>
         </div>
         <div class="rule">
             <div class="rule-id">high_ttfb</div>
             <div class="rule-action">Action: <strong>enable_cdn_caching</strong></div>
-            <div>Assets: <code>defer_delay=ms</code></div>
+            <div>Detail: <code>Enable CDN edge caching or move to a faster hosting region</code></div>
             <div class="rule-gain">Estimated saving: 250 ms</div>
         </div>
 
-<div class="generated">Generated: 2026-03-21 11:43:19</div>
+<h2>Alerts (last 1)</h2><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page / is POOR — load=4265ms, ttfb=760ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-03-21T06:22:19</span></div>
+
+
+        <h2>History (last 2 runs)</h2>
+        <table>
+          <thead><tr><th>Timestamp</th><th>Page</th><th>Load Time</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr>
+                <td>2026-03-21T06:22:17</td>
+                <td>/</td>
+                <td>4265 ms</td>
+                <td><span style="color:#ef4444;font-weight:bold">poor</span></td>
+            </tr>
+            <tr>
+                <td>2026-03-21T06:22:18</td>
+                <td>/chat</td>
+                <td>659 ms</td>
+                <td><span style="color:#22c55e;font-weight:bold">good</span></td>
+            </tr></tbody>
+        </table>
+
+<div class="generated">Generated: 2026-03-21 11:52:19</div>
 </body>
 </html>

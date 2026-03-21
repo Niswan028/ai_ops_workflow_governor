@@ -1,11 +1,11 @@
 {
   "governor_rules": [
     {
-      "pattern_id": "fitbot_slow_load_time",
+      "pattern_id": "slow_load_time",
       "action_type": "prefetch_critical_assets",
       "critical_assets": [
-        "/static/app.js",
-        "/static/styles.css"
+        "https://fitaichat.netlify.app/static/css/main.f8a5623e.css",
+        "https://fitaichat.netlify.app/static/js/main.a18236ee.js"
       ],
       "estimated_load_time_reduction_ms": 400
     },

@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp": "2026-03-21T06:22:19.674779",
+    "page": "/",
+    "load_time_ms": "4265",
+    "ttfb_ms": "760",
+    "severity": "critical",
+    "message": "Page / is POOR \u2014 load=4265ms, ttfb=760ms"
+  },
+  {
+    "timestamp": "2026-03-21T06:23:30.199065",
+    "page": "/",
+    "load_time_ms": "3500",
+    "ttfb_ms": "700",
+    "severity": "critical",
+    "message": "Page / is POOR \u2014 load=3500ms, ttfb=700ms"
+  },
+  {
+    "timestamp": "2026-03-21T06:23:30.204618",
+    "page": "/chat",
+    "load_time_ms": "2800",
+    "ttfb_ms": "500",
+    "severity": "warning",
+    "message": "Page /chat is POOR \u2014 load=2800ms, ttfb=500ms"
+  },
+  {
+    "timestamp": "2026-03-21T06:23:42.899821+00:00",
+    "page": "/",
+    "load_time_ms": "3500",
+    "ttfb_ms": "700",
+    "severity": "critical",
+    "message": "Page / is POOR \u2014 load=3500ms, ttfb=700ms"
+  },
+  {
+    "timestamp": "2026-03-21T06:23:42.917020+00:00",
+    "page": "/chat",
+    "load_time_ms": "2800",
+    "ttfb_ms": "500",
+    "severity": "warning",
+    "message": "Page /chat is POOR \u2014 load=2800ms, ttfb=500ms"
+  }
+]
