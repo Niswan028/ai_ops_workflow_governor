@@ -4,11 +4,11 @@
       "pattern_id": "slow_load_time",
       "action_type": "prefetch_critical_assets",
       "critical_assets": [
-        "https://hashnode.com/_next/static/chunks/72cd4bd1e0564c77.css",
+        "https://hashnode.com/_next/static/chunks/9e1e6df4b94fb774.css",
+        "https://hashnode.com/_next/static/chunks/5aa6e52e0dd7aea2.css",
         "https://hashnode.com/_next/static/chunks/39c65b9ff246101f.css",
-        "https://hashnode.com/_next/static/chunks/73e3194f06db260e.js",
         "https://hashnode.com/_next/static/chunks/d598f1f652e2d146.js",
-        "https://hashnode.com/_next/static/chunks/ade94519337d7214.js"
+        "https://hashnode.com/_next/static/chunks/5d420d97975eccac.js"
       ],
       "estimated_load_time_reduction_ms": 400
     },
