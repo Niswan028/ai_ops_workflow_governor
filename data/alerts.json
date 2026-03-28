@@ -222,5 +222,29 @@
     "ttfb_ms": "816",
     "severity": "critical",
     "message": "Page /featured is POOR \u2014 load=3338ms, ttfb=816ms"
+  },
+  {
+    "timestamp": "2026-03-28T07:02:19.923393+00:00",
+    "page": "/",
+    "load_time_ms": "3134",
+    "ttfb_ms": "63",
+    "severity": "critical",
+    "message": "Page / is POOR \u2014 load=3134ms, ttfb=63ms"
+  },
+  {
+    "timestamp": "2026-03-28T07:02:19.923406+00:00",
+    "page": "/explore",
+    "load_time_ms": "3334",
+    "ttfb_ms": "140",
+    "severity": "critical",
+    "message": "Page /explore is POOR \u2014 load=3334ms, ttfb=140ms"
+  },
+  {
+    "timestamp": "2026-03-28T07:02:19.923411+00:00",
+    "page": "/featured",
+    "load_time_ms": "3679",
+    "ttfb_ms": "192",
+    "severity": "critical",
+    "message": "Page /featured is POOR \u2014 load=3679ms, ttfb=192ms"
   }
 ]
