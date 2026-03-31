@@ -5,10 +5,10 @@
       "action_type": "prefetch_critical_assets",
       "critical_assets": [
         "https://hashnode.com/_next/static/chunks/5aa6e52e0dd7aea2.css",
-        "https://hashnode.com/_next/static/chunks/7f005428375f2407.css",
+        "https://hashnode.com/_next/static/chunks/b822d8962c0126a0.css",
         "https://hashnode.com/_next/static/chunks/39c65b9ff246101f.css",
         "https://hashnode.com/_next/static/chunks/faf4a0202735b81c.js",
-        "https://hashnode.com/_next/static/chunks/ade94519337d7214.js"
+        "https://hashnode.com/_next/static/chunks/d96012bcfc98706a.js"
       ],
       "estimated_load_time_reduction_ms": 400
     },
