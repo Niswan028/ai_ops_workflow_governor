@@ -4,11 +4,11 @@
       "pattern_id": "slow_load_time",
       "action_type": "prefetch_critical_assets",
       "critical_assets": [
-        "https://hashnode.com/_next/static/chunks/39c65b9ff246101f.css",
-        "https://hashnode.com/_next/static/chunks/6caf7277614b8f01.css",
-        "https://hashnode.com/_next/static/chunks/2a94d2b5f407f8ab.css",
-        "https://hashnode.com/_next/static/chunks/faf4a0202735b81c.js",
-        "https://hashnode.com/_next/static/chunks/d598f1f652e2d146.js"
+        "https://hashnode.com/_next/static/chunks/d96012bcfc98706a.js",
+        "https://hashnode.com/_next/static/chunks/73e3194f06db260e.js",
+        "https://hashnode.com/_next/static/chunks/5229fa9d250c5aac.js",
+        "https://hashnode.com/_next/static/chunks/d598f1f652e2d146.js",
+        "https://hashnode.com/_next/static/chunks/1ef5fa9cf9c5989a.js"
       ],
       "estimated_load_time_reduction_ms": 400
     },
@@ -17,12 +17,6 @@
       "action_type": "defer_chat_widget",
       "defer_delay_ms": 2000,
       "estimated_load_time_reduction_ms": 300
-    },
-    {
-      "pattern_id": "high_ttfb",
-      "action_type": "enable_cdn_caching",
-      "recommendation": "Enable CDN edge caching or move to a faster hosting region",
-      "estimated_load_time_reduction_ms": 250
     }
   ]
 }
