@@ -29,37 +29,37 @@
   <thead><tr><th>Timestamp</th><th>Page</th><th>TTFB</th><th>Load Time</th><th>Requests</th><th>CWV Status</th></tr></thead>
   <tbody>
         <tr>
-            <td>2026-05-08T07:46:38.823774+00:00</td>
+            <td>2026-05-09T07:59:40.193999+00:00</td>
             <td>/</td>
-            <td>46 ms</td>
-            <td>3162 ms</td>
-            <td>23</td>
+            <td>618 ms</td>
+            <td>4420 ms</td>
+            <td>28</td>
             <td><span style="color:#ef4444;font-weight:bold">poor</span></td>
         </tr>
         <tr>
-            <td>2026-05-08T07:46:42.833807+00:00</td>
+            <td>2026-05-09T07:59:43.453740+00:00</td>
             <td>/explore</td>
-            <td>11 ms</td>
-            <td>3956 ms</td>
-            <td>42</td>
+            <td>114 ms</td>
+            <td>3210 ms</td>
+            <td>52</td>
             <td><span style="color:#ef4444;font-weight:bold">poor</span></td>
         </tr>
         <tr>
-            <td>2026-05-08T07:46:59.660432+00:00</td>
+            <td>2026-05-09T07:59:47.148967+00:00</td>
             <td>/featured</td>
-            <td>274 ms</td>
-            <td>16771 ms</td>
-            <td>45</td>
+            <td>113 ms</td>
+            <td>3649 ms</td>
+            <td>52</td>
             <td><span style="color:#ef4444;font-weight:bold">poor</span></td>
         </tr></tbody>
 </table>
 
-<h2>Governor Rules (2 recommendations)</h2>
+<h2>Governor Rules (3 recommendations)</h2>
 
         <div class="rule">
             <div class="rule-id">slow_load_time</div>
             <div class="rule-action">Action: <strong>prefetch_critical_assets</strong></div>
-            <div>Detail: <code>https://hashnode.com/_next/static/chunks/39c65b9ff246101f.css, https://hashnode.com/_next/static/chunks/e809a6b3f889f618.css, https://hashnode.com/_next/static/chunks/6caf7277614b8f01.css, https://hashnode.com/_next/static/chunks/ade94519337d7214.js, https://hashnode.com/_next/static/chunks/faf4a0202735b81c.js</code></div>
+            <div>Detail: <code>https://hashnode.com/_next/static/chunks/faf4a0202735b81c.js, https://hashnode.com/_next/static/chunks/ade94519337d7214.js, https://hashnode.com/_next/static/chunks/d96012bcfc98706a.js, https://hashnode.com/_next/static/chunks/turbopack-30f62fc35629b0a3.js, https://hashnode.com/_next/static/chunks/b09d5057b16f7e4c.js</code></div>
             <div class="rule-gain">Estimated saving: 400 ms</div>
         </div>
         <div class="rule">
@@ -68,32 +68,20 @@
             <div>Detail: <code>defer_delay=2000ms</code></div>
             <div class="rule-gain">Estimated saving: 300 ms</div>
         </div>
+        <div class="rule">
+            <div class="rule-id">high_ttfb</div>
+            <div class="rule-action">Action: <strong>enable_cdn_caching</strong></div>
+            <div>Detail: <code>Enable CDN edge caching or move to a faster hosting region</code></div>
+            <div class="rule-gain">Estimated saving: 250 ms</div>
+        </div>
 
-<h2>Alerts (last 10)</h2><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page /featured is POOR — load=3780ms, ttfb=1678ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-05-05T08:13:25</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page / is POOR — load=3279ms, ttfb=101ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-05-06T08:29:34</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page /explore is POOR — load=3103ms, ttfb=548ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-05-06T08:29:34</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page /featured is POOR — load=3813ms, ttfb=249ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-05-06T08:29:34</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page / is POOR — load=3557ms, ttfb=253ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-05-07T08:36:58</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page /explore is POOR — load=3237ms, ttfb=108ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-05-07T08:36:58</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page /featured is POOR — load=3221ms, ttfb=26ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-05-07T08:36:58</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page / is POOR — load=3162ms, ttfb=46ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-05-08T07:46:59</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page /explore is POOR — load=3956ms, ttfb=11ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-05-08T07:46:59</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page /featured is POOR — load=16771ms, ttfb=274ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-05-08T07:46:59</span></div>
+<h2>Alerts (last 10)</h2><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page /featured is POOR — load=3813ms, ttfb=249ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-05-06T08:29:34</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page / is POOR — load=3557ms, ttfb=253ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-05-07T08:36:58</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page /explore is POOR — load=3237ms, ttfb=108ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-05-07T08:36:58</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page /featured is POOR — load=3221ms, ttfb=26ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-05-07T08:36:58</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page / is POOR — load=3162ms, ttfb=46ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-05-08T07:46:59</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page /explore is POOR — load=3956ms, ttfb=11ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-05-08T07:46:59</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page /featured is POOR — load=16771ms, ttfb=274ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-05-08T07:46:59</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page / is POOR — load=4420ms, ttfb=618ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-05-09T07:59:47</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page /explore is POOR — load=3210ms, ttfb=114ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-05-09T07:59:47</span></div><div class="alert" style="border-left-color:#ef4444"><strong>[CRITICAL]</strong> Page /featured is POOR — load=3649ms, ttfb=113ms <span style="color:#94a3b8;font-size:0.8rem">— 2026-05-09T07:59:47</span></div>
 
 
         <h2>History (last 20 runs)</h2>
         <table>
           <thead><tr><th>Timestamp</th><th>Page</th><th>Load Time</th><th>Status</th></tr></thead>
           <tbody>
-            <tr>
-                <td>2026-05-02T07:48:16</td>
-                <td>/explore</td>
-                <td>5261 ms</td>
-                <td><span style="color:#ef4444;font-weight:bold">poor</span></td>
-            </tr>
-            <tr>
-                <td>2026-05-02T07:48:21</td>
-                <td>/featured</td>
-                <td>5516 ms</td>
-                <td><span style="color:#ef4444;font-weight:bold">poor</span></td>
-            </tr>
-            <tr>
-                <td>2026-05-03T08:03:54</td>
-                <td>/</td>
-                <td>3258 ms</td>
-                <td><span style="color:#ef4444;font-weight:bold">poor</span></td>
-            </tr>
             <tr>
                 <td>2026-05-03T08:04:01</td>
                 <td>/explore</td>
@@ -195,9 +183,27 @@
                 <td>/featured</td>
                 <td>16771 ms</td>
                 <td><span style="color:#ef4444;font-weight:bold">poor</span></td>
+            </tr>
+            <tr>
+                <td>2026-05-09T07:59:40</td>
+                <td>/</td>
+                <td>4420 ms</td>
+                <td><span style="color:#ef4444;font-weight:bold">poor</span></td>
+            </tr>
+            <tr>
+                <td>2026-05-09T07:59:43</td>
+                <td>/explore</td>
+                <td>3210 ms</td>
+                <td><span style="color:#ef4444;font-weight:bold">poor</span></td>
+            </tr>
+            <tr>
+                <td>2026-05-09T07:59:47</td>
+                <td>/featured</td>
+                <td>3649 ms</td>
+                <td><span style="color:#ef4444;font-weight:bold">poor</span></td>
             </tr></tbody>
         </table>
 
-<div class="generated">Generated: 2026-05-08 07:46:59</div>
+<div class="generated">Generated: 2026-05-09 07:59:47</div>
 </body>
 </html>
