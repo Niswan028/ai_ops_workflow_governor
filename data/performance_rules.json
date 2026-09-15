@@ -7,12 +7,6 @@
         "https://us-assets.i.posthog.com/array/phc_8kd2luKHyzi3Ne1e4GwCaDgGhyA8kckkou4PuavZXxV/config.js"
       ],
       "estimated_load_time_reduction_ms": 400
-    },
-    {
-      "pattern_id": "high_ttfb",
-      "action_type": "enable_cdn_caching",
-      "recommendation": "Enable CDN edge caching or move to a faster hosting region",
-      "estimated_load_time_reduction_ms": 250
     }
   ]
 }
