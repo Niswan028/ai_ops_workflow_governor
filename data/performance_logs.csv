@@ -1,4 +1,4 @@
 timestamp,page_url,ttfb_ms,load_time_ms,requests_count,core_web_vitals_status,detected_assets
-2026-10-18T10:32:55.698779+00:00,/,108,3630,1,poor,https://us-assets.i.posthog.com/array/phc_8kd2luKHyzi3Ne1e4GwCaDgGhyA8kckkou4PuavZXxV/config.js
-2026-10-18T10:32:59.187806+00:00,/explore,24,3437,2,poor,https://us-assets.i.posthog.com/array/phc_8kd2luKHyzi3Ne1e4GwCaDgGhyA8kckkou4PuavZXxV/config.js|https://us-assets.i.posthog.com/array/phc_8kd2luKHyzi3Ne1e4GwCaDgGhyA8kckkou4PuavZXxV/config.js
-2026-10-18T10:33:02.571915+00:00,/featured,23,3335,2,poor,https://us-assets.i.posthog.com/array/phc_8kd2luKHyzi3Ne1e4GwCaDgGhyA8kckkou4PuavZXxV/config.js|https://us-assets.i.posthog.com/array/phc_8kd2luKHyzi3Ne1e4GwCaDgGhyA8kckkou4PuavZXxV/config.js
+2026-10-19T12:25:55.102127+00:00,/,93,3425,1,poor,https://us-assets.i.posthog.com/array/phc_8kd2luKHyzi3Ne1e4GwCaDgGhyA8kckkou4PuavZXxV/config.js
+2026-10-19T12:25:58.539055+00:00,/explore,15,3391,2,poor,https://us-assets.i.posthog.com/array/phc_8kd2luKHyzi3Ne1e4GwCaDgGhyA8kckkou4PuavZXxV/config.js|https://us-assets.i.posthog.com/array/phc_8kd2luKHyzi3Ne1e4GwCaDgGhyA8kckkou4PuavZXxV/config.js
+2026-10-19T12:26:01.775861+00:00,/featured,6,3200,2,poor,https://us-assets.i.posthog.com/array/phc_8kd2luKHyzi3Ne1e4GwCaDgGhyA8kckkou4PuavZXxV/config.js|https://us-assets.i.posthog.com/array/phc_8kd2luKHyzi3Ne1e4GwCaDgGhyA8kckkou4PuavZXxV/config.js
