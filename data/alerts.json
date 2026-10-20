@@ -5142,5 +5142,29 @@
     "ttfb_ms": "6",
     "severity": "critical",
     "message": "Page /featured is POOR \u2014 load=3200ms, ttfb=6ms"
+  },
+  {
+    "timestamp": "2026-10-20T11:03:38.346278+00:00",
+    "page": "/",
+    "load_time_ms": "3487",
+    "ttfb_ms": "120",
+    "severity": "critical",
+    "message": "Page / is POOR \u2014 load=3487ms, ttfb=120ms"
+  },
+  {
+    "timestamp": "2026-10-20T11:03:38.346291+00:00",
+    "page": "/explore",
+    "load_time_ms": "3209",
+    "ttfb_ms": "15",
+    "severity": "critical",
+    "message": "Page /explore is POOR \u2014 load=3209ms, ttfb=15ms"
+  },
+  {
+    "timestamp": "2026-10-20T11:03:38.346296+00:00",
+    "page": "/featured",
+    "load_time_ms": "3215",
+    "ttfb_ms": "17",
+    "severity": "critical",
+    "message": "Page /featured is POOR \u2014 load=3215ms, ttfb=17ms"
   }
 ]
