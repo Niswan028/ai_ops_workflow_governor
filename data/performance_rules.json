@@ -4,9 +4,19 @@
       "pattern_id": "slow_load_time",
       "action_type": "prefetch_critical_assets",
       "critical_assets": [
-        "https://us-assets.i.posthog.com/array/phc_8kd2luKHyzi3Ne1e4GwCaDgGhyA8kckkou4PuavZXxV/config.js"
+        "https://hashnode.com/_next/static/immutable/chunks/1_2pu7o5n753v.css",
+        "https://hashnode.com/_next/static/immutable/chunks/2o526-zkccdyi.js",
+        "https://hashnode.com/_next/static/immutable/chunks/0pv18yg2ifn_g.js",
+        "https://hashnode.com/_next/static/immutable/chunks/16-26fxdyuc-e.js",
+        "https://hashnode.com/_next/static/immutable/chunks/44ql4mjh8-fx8.css"
       ],
       "estimated_load_time_reduction_ms": 400
+    },
+    {
+      "pattern_id": "chat_widget_burst",
+      "action_type": "defer_chat_widget",
+      "defer_delay_ms": 2000,
+      "estimated_load_time_reduction_ms": 300
     }
   ]
 }
